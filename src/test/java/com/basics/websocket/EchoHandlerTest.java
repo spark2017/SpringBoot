@@ -16,7 +16,6 @@ public class EchoHandlerTest {
 		TextMessage msg = new TextMessage("Hello World!");
 		handler.handleTextMessage(mockSession, msg);
 		verify(mockSession, times(1)).sendMessage(eq(new TextMessage("RECEIVED: Hello World!")));
-		System.out.println("test completed..");
 	}
 
 }
