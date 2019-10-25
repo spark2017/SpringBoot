@@ -10,7 +10,7 @@ public class HelloWorldController {
 
 	@GetMapping
 	public Mono<String> hello() {
-		return Mono.just("Hello World, from Spring Boot 2!");
+		return Mono.just("Hello World, from Reactive Spring Boot 2!");
 	}
 
 }
